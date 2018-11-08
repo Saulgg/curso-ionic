@@ -11,7 +11,10 @@ import { Injectable } from '@angular/core';
 export class AuthProvider {
 
   constructor(public http: HttpClient) {
-    console.log('Hello AuthProvider Provider');
+
+  }
+  login(user){
+    return this.http.get('https://demo8866596.mockable.io/AdminPerm');
   }
 
 }
